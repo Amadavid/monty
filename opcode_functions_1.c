@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * mon_push - Pushes an Element's to Stack
+ * _push - Pushes an Element's to Stack
  *
  * @doubly: Head of LINKED LIST
  * @cline: Line Numb
  * Return: No Return
  */
-void mon_push(stack_t **doubly, unsigned int cline)
+void _push(stack_t **doubly, unsigned int cline)
 {
 	int n, q;
 

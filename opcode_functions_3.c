@@ -2,10 +2,9 @@
 
 /**
 *mon_div - Divide's the Second element By the Top Element'S of Stack
-*
-*@doubly: head of the linked list
-*@cline: line number;
-*Return: no return
+*@doubly: Head of LINKED LIST
+*@cline: Line Numb
+*Return: No Return
 */
 void mon_div(stack_t **doubly, unsigned int cline)
 {

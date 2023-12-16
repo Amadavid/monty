@@ -1,6 +1,7 @@
 #ifndef MONTY
 #define MONTY
 
+#define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -63,22 +64,22 @@ typedef struct instruction_s
 
 extern global_t vglo;
 
-/* opcode_functions_1*/
+/* opcode_functions*/
 void mon_push(stack_t **stack, unsigned int line_number);
 void mon_pall(stack_t **stack, unsigned int line_number);
 void mon_pint(stack_t **doubly, unsigned int cline);
 void mon_pop(stack_t **doubly, unsigned int cline);
 void mon_swap(stack_t **doubly, unsigned int cline);
-void _queue(stack_t **doubly, unsigned int cline);
-void _stack(stack_t **doubly, unsigned int cline);
-void _add(stack_t **doubly, unsigned int cline);
-void _nop(stack_t **doubly, unsigned int cline);
-void _sub(stack_t **doubly, unsigned int cline);
-void _div(stack_t **doubly, unsigned int cline);
-void _mul(stack_t **doubly, unsigned int cline);
-void _mod(stack_t **doubly, unsigned int cline);
-void _pchar(stack_t **doubly, unsigned int cline);
-void _pstr(stack_t **doubly, unsigned int cline);
+void mon_queue(stack_t **doubly, unsigned int cline);
+void mon_stack(stack_t **doubly, unsigned int cline);
+void mon_add(stack_t **head, unsigned int counter);
+void mon_nop(stack_t **doubly, unsigned int cline);
+void mon_sub(stack_t **doubly, unsigned int cline);
+void mon_div(stack_t **doubly, unsigned int cline);
+void mon_mul(stack_t **doubly, unsigned int cline);
+void mon_mod(stack_t **doubly, unsigned int cline);
+void mon_pchar(stack_t **doubly, unsigned int cline);
+void mon_pstr(stack_t **doubly, unsigned int cline);
 void _rotl(stack_t **doubly, unsigned int cline);
 void _rotr(stack_t **doubly, unsigned int cline);
 
