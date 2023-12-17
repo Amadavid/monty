@@ -1,12 +1,12 @@
 #include"monty.h"
 
 /**
-*mon_div - Divide's the Second element By the Top Element'S of Stack
+*_div - Divide's the Second element By the Top Element'S of Stack
 *@doubly: Head of LINKED LIST
 *@cline: Line Numb
 *Return: No Return
 */
-void mon_div(stack_t **doubly, unsigned int cline)
+void _div(stack_t **doubly, unsigned int cline)
 {
 
 	int m = 0;

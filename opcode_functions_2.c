@@ -34,35 +34,6 @@ void _stack(stack_t **doubly, unsigned int cline)
 }
 
 /**
- * mon_add - Adds the Top Two Elements of the Stack
- *
- * @doubly: Head of the LINKED LIST;
- * @cline: Line Numb;
- * Return: No Return
- */
-void mon_add(stack_t **doubly, unsigned int cline)
-{
-	int m = 0;
-	stack_t *aux = NULL;
-
-	aux = *doubly;
-
-	for (; aux != NULL; aux = aux->next, m++)
-		;
-
-	if (m < 2)
-	{
-		dprintf(2, "L%u: can't add, stack too short\n", cline);
-		free_vglo();
-		exit(EXIT_FAILURE);
-	}
-
-	aux = (*doubly)->next;
-	aux->n += (*doubly)->n;
-	_pop(doubly, cline);
-}
-
-/**
  * mon_nop - Doesn't do Anythinhg
  *
  * @doubly: Head of LINKED LIST
